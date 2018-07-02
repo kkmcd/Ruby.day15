@@ -14,7 +14,7 @@ class KakaoController < ApplicationController
     if @user_msg == "로또"
       @text = (1..45).to_a.sample(6).sort.to_s
     elsif @user_msg == "메뉴"      
-      @text = ["창봉이가 사주는 마약떡볶이","창봉이가 사주는 닭꼬치", "창봉이가 사주는 밥"].sample(1).to_s
+      @text = ["창봉이가 사주는 마약떡볶이","창봉이가 사주는 닭꼬치", "창봉이가 사주는 밥","창봉이가 사주는 햄버거","창봉이가 사주는 피자","창봉이가 사주는 돈까스","창봉이가 사주는 초밥"].sample(1).to_s
     elsif @user_msg == "고양이"
       @url = "http://thecatapi.com/api/images/get?format=xml&type=jpg"
       @cat_xml = RestClient.get(@url)
