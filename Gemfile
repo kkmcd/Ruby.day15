@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.3.4'
 gem 'rest-client'
 gem 'nokogiri'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -7,7 +7,7 @@ gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3' 헤로쿠에서 sqlite3를 지원하지않기 때문에 배포는 아래의 2개로 나눠서 배포한다.
 gem 'sqlite3', :group => :development 
-gem 'pg', '~> 0.18', :group => :production
+gem 'pg', '~> 0.21', :group => :production
 gem 'rails_12factor', :group => :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
